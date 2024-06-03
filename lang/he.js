@@ -279,8 +279,9 @@ export default {
     title_company: 'חברה',
     title_actors: 'שחקנים',
     title_actor: 'שחקן',
-    title_actress: 'שחקנים',
+    title_actress: 'אַקטריסע',
     title_person: 'אדם',
+    title_persons: 'אנשים',
     title_comments: 'הערות',
     title_torrents: 'Torrents',
     title_trailers: 'טריילרים',
@@ -1014,5 +1015,13 @@ export default {
     ad_after: 'פרסום באמצעות',
     ad: 'פִּרסוּם',
     ad_skip: 'לדלג',
-    ad_continue_after: 'הצפייה תתחיל בעוד'
+    ad_continue_after: 'הצפייה תתחיל בעוד',
+    settings_parser_prowlarr_link_descr: 'ספק קישור לשרת Prowlarr',
+    settings_parser_prowlarr_key_descr: 'ממוקם בלשונית הגדרות Prowlarr בקטגוריה הכללית',
+    settings_player_torrent_type: 'סוג נגן עבור טורנטים',
+    settings_player_torrent_type_descr: 'באיזה שחקן לשחק טורנטים',
+
+    full_crew: 'עוד',
+    full_editing: 'עריכה',
+    full_creator: 'יוצר'
 }

@@ -285,6 +285,7 @@ export default {
     title_actor: 'Актор',
     title_actress: 'Актриса',
     title_person: 'Персона',
+    title_persons: 'Особи',
     title_comments: 'Коментарі',
     title_torrents: 'Торренти',
     title_trailers: 'Трейлери',
@@ -1081,5 +1082,13 @@ export default {
     ad_after: 'Реклама через',
     ad: 'Реклама',
     ad_skip: 'Пропустити',
-    ad_continue_after: 'Перегляд розпочнеться через'
+    ad_continue_after: 'Перегляд розпочнеться через',
+    settings_parser_prowlarr_link_descr: 'Вкажіть посилання на сервер Prowlarr',
+    settings_parser_prowlarr_key_descr: 'Знаходиться у вкладці налаштувань Prowlarr у категорії основне',
+    settings_player_torrent_type: 'Тип плеєра для торентів',
+    settings_player_torrent_type_descr: 'Яким плеєром відтворювати торренти',
+
+    full_crew: 'Ще',
+    full_editing: 'Редагування',
+    full_creator: 'Творець'
 }

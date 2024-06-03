@@ -305,6 +305,7 @@ export default {
     title_actor: 'Ator',
     title_actress: 'Atriz',
     title_person: 'Pessoa',
+    title_persons: 'Pessoas',
     title_comments: 'Comentários',
     title_torrents: 'Torrents',
     title_trailers: 'Trailers',
@@ -1101,5 +1102,13 @@ export default {
     ad_after: 'Publicidade via',
     ad: 'Anúncio',
     ad_skip: 'Pular',
-    ad_continue_after: 'A visualização começará em'
+    ad_continue_after: 'A visualização começará em',
+    settings_parser_prowlarr_link_descr: 'Forneça um link para o servidor Prowlarr',
+    settings_parser_prowlarr_key_descr: 'Localizado na guia de configurações do Prowlarr na categoria geral',
+    settings_player_torrent_type: 'Tipo de player para torrents',
+    settings_player_torrent_type_descr: 'Qual player jogar torrents',
+
+    full_crew: 'Mais',
+    full_editing: 'Edição',
+    full_creator: 'Criador'
 }
