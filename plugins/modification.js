@@ -1,5 +1,7 @@
 (function () {
     'use strict';
+
+    Lampa.Storage.set('device_name', 'Lampa Uncensored');
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
