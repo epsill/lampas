@@ -1,7 +1,6 @@
 (function () {
     'use strict';
 
-    Lampa.Storage.set('device_name', 'Lampa Uncensored');
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
@@ -29,6 +28,7 @@
 	     Lampa.Storage.set('player_timecode', 'ask');
 	     Lampa.Storage.set('screensaver', 'false');
 	     Lampa.Storage.set('pages_save_total', '3');
+	     Lampa.Storage.set('device_name', 'Lampa Uncensored');
     } 
 
 })();
