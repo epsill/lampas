@@ -1,11 +1,10 @@
 (function () {
     'use strict';
 
-    Lampa.Storage.set('device_name', 'Lampa Uncensored');
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
-	    'http://79.137.205.41/themes.js?v=' + Math.random()
+	    'https://bylampa.github.io/themes.js?v=' + Math.random()
     ], function () {});
 
     var timer = setInterval(function(){
@@ -29,6 +28,7 @@
 	     Lampa.Storage.set('player_timecode', 'ask');
 	     Lampa.Storage.set('screensaver', 'false');
 	     Lampa.Storage.set('pages_save_total', '3');
+	     Lampa.Storage.set('device_name', 'Lampa Uncensored');
     } 
 
 })();
