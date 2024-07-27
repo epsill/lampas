@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    // Создаем элементы аудио
+  /*  // Создаем элементы аудио
 var audioUpElement = document.createElement('audio');
 var audioDownElement = document.createElement('audio');
 
@@ -20,7 +20,7 @@ document.onkeydown = function(event) {
     audioDownElement.play();
     
   }
-};
+};*/
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
