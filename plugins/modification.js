@@ -9,17 +9,15 @@ const audioDownElement = document.createElement('audio');
 audioUpElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 audioDownElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 
-// Обрабатываем события перемещения
-Lampa.Controller.add('up', () => {
-  audioUpElement.currentTime = 0;
-  audioUpElement.play();
-  Lampa.Controller.move('up');
-});
-
-Lampa.Controller.add('down', () => {
-  audioDownElement.currentTime = 0;
-  audioDownElement.play();
-  Lampa.Controller.move('down');
+// Добавляем обработчики событий клавиатуры
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowUp') {
+    audioUpElement.currentTime = 0;
+    audioUpElement.play();
+  } else if (event.key === 'ArrowDown') {
+    audioDownElement.currentTime = 0;
+    audioDownElement.play();
+  }
 });
 	
     Lampa.Utils.putScriptAsync([
