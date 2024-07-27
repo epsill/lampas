@@ -2,23 +2,25 @@
     'use strict';
 
     // Создаем элементы аудио
-const audioUpElement = document.createElement('audio');
-const audioDownElement = document.createElement('audio');
+var audioUpElement = document.createElement('audio');
+var audioDownElement = document.createElement('audio');
 
 // Устанавливаем источники звука
 audioUpElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 audioDownElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 
-// Добавляем обработчики событий клавиатуры
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'ArrowUp') {
+// Обрабатываем события пульта ТВ
+document.onkeydown = function(event) {
+  if (event.keyCode === 38) { // Кнопка "вверх"
     audioUpElement.currentTime = 0;
     audioUpElement.play();
-  } else if (event.key === 'ArrowDown') {
+    
+  } else if (event.keyCode === 40) { // Кнопка "вниз"
     audioDownElement.currentTime = 0;
     audioDownElement.play();
+    
   }
-});
+};
 	
     Lampa.Utils.putScriptAsync([
 	    'https://bylampa.github.io/addon.js?v=' + Math.random(),
