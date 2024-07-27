@@ -2,21 +2,23 @@
     'use strict';
 
     // Создаем элементы аудио
-var audioUpElement = document.createElement('audio');
-var audioDownElement = document.createElement('audio');
+const audioUpElement = document.createElement('audio');
+const audioDownElement = document.createElement('audio');
 
 // Устанавливаем источники звука
 audioUpElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 audioDownElement.src = 'https://github.com/spreyo/clicket/raw/main/sounds/click.mp3';
 
 // Обрабатываем события перемещения
-Lampa.Controller.add('up', function() {
-  audioUpElement.play(); // Воспроизводим звук при перемещении вверх
+Lampa.Controller.add('up', () => {
+  audioUpElement.currentTime = 0;
+  audioUpElement.play();
   Lampa.Controller.move('up');
 });
 
-Lampa.Controller.add('down', function() {
-  audioDownElement.play(); // Воспроизводим звук при перемещении вниз
+Lampa.Controller.add('down', () => {
+  audioDownElement.currentTime = 0;
+  audioDownElement.play();
   Lampa.Controller.move('down');
 });
 	
