@@ -78,7 +78,7 @@ document.onkeydown = function(event) {
       }
     });
 
-    var last_video_used = [];
+    /*var last_video_used = [];
 
 	// преобразуем jQuery в Native селектор
 		function jQueryToNative(jQuerySelector) {
@@ -131,6 +131,6 @@ document.onkeydown = function(event) {
 				//Lampa.Noty.show(queryProxy);
 	        }
 		}, 500)
-	});
+	});*/
 
 })();
